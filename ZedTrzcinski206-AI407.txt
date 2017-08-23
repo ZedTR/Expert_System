@@ -1,0 +1,104 @@
+:- discontiguous class/8.
+class(set,1,cst116,subject(cplusplus),4,preq([non]),freshman,term(fall)).
+class(set,1,cst126,subject(cplusplus),4,preq([cst116]),freshman,term(winter)).
+class(set,1,cst120,subject(embedded_c),4,preq([cst116,cst126]),freshman,term(spring)).
+class(set,1,cst136,subject(object_oriented),4,preq([cst116,cst126]),freshman,term(spring)).
+class(set,1,cst211,subject(data_structure),4,preq([cst116,cst126,cst136]),sophmore,term(winter)).
+class(set,1,cst236,subject(software_testing),4,preq([cst136]),sophmore,term(spring)).
+class(set,1,cst276,subject(design_patterns),4,preq([cst136,cst126,cst116]),sophmore,term(fall)).
+class(set,1,cst238,subject(gui_coding),4,preq([cst211,cst136,cst126,cst116]),sophmore,term(spring)).
+class(set,1,cst316,subject(software_process_managment),4,preq([cst211,cst136,cst126,cst116]),junoir,term(fall)).
+class(set,1,cst326,subject(software_design_implentation_1),4,preq([cst316,cst211,cst136,cst126,cst116]),junoir,term(winter)).
+class(set,1,cst336,subject(software_design_implentation_2),4,preq([cst326,cst316,cst211,cst136,cst126,cst116]),junior,term(spring)).
+class(set,1,cst223,subject(concepts_of_programming_langague),4,preq([cst126,cst116]),sophmore,term(spring)).
+class(set,1,cst229,subject(intro_to_grammers),3,preq([cst223,cst211]),junoir,term(fall)).
+class(set,1,cst320,subject(compiler_methods),4,preq([cst229,cst223,cst211,cst136,cst126,cst116]),junoir,term(fall)).
+class(set,1,math111,subject(college_algebra),4,preq([non]),freshman,term(winter)).
+class(set,1,math112,subject(trig),4,preq([math111]),freshman,term(spring)).
+class(set,1,math251,subject(calculus_1),4,preq([math111,math112]),junior,term(sophmore)).
+class(set,1,math252,subject(calculus_2),4,preq([math111,math112,math251]),sophmore,term(winter)).
+class(set,1,math254n,subject(vector_calculus),4,preq([math111,math112,math251,math252]),sophmore,term(spring)).
+class(set,1,math327,subject(discrete_structure),4,preq([math252,math251,math112,math111]),sophmore,term(summer)).
+class(set,1,phy221,subject(general_physics_1),4,preq([math251]),junior,term(fall)).
+class(set,1,phy222,subject(general_physics_2),4,preq([math252,math327,phy221,math251,math112,math111]),junior,term(winter)).
+class(set,1,phy223,subject(general_physics_3),4,preq([phy222,phy221,math252,math251,math112,math111]),junior,term(spring)).
+class(set,1,math465,subject(statistics),4,preq([math254n,math252,math251,math112,math111]),junior,term(summer)).
+class(set,1,cst162,subject(intro_to_digital_logic),4,preq([non]),freshman,term(fall)).
+class(set,1,cst130,subject(computer_organization),3,preq([cst162]),freshman,term(winter)).
+class(set,1,cst131,subject(computer_arch),3,preq([cst130,cst162]),freshman,term(spring)).
+class(set,1,cst250,subject(assembly_lang),4,preq([cst162,cst126,cst130]),sophmore,term(fall)).
+class(set,1,cst324,subject(database_design),4,preq([cst211,cst136,cst126,cst116]),junior,term(fall)).
+class(set,1,cst352,subject(operating_system),4,preq([cst211,cst126,cst116]),junior,term(spring)).
+class(set,1,cst240,subject(unix),4,preq([cst126,cst116]),sophmore,term(winter)).
+class(set,1,psch201,subject(psychology),3,preq([non]),freshman,term(summer)).
+class(set,1,wri121,subject(english_comp_1),3,preq([non]),freshman,term(fall)).
+class(set,1,wri122,subject(english_comp_2),3,preq([wri121]),junior,term(winter)).
+class(set,1,wri227,subject(techical_writing),3,preq([wri121,wri122,spe111]),sophmore,term(summer)).
+class(set,1,spe11,subject(public_speech),3,preq([non]),freshman,term(summer)).
+class(set,1,spe321,subject(small_team_communication),3,preq([spe111]),junior,term(winter)).
+class(set,1,wri350,subject(doc_dev),3,preq([wri227]),junior,term(winter)).
+class(set,1,wri327,subject(adv_technical_writing),3,preq([wri227]),junior,term(spring)).
+class(set,1,bus304,subject(engineering_management),3,preq([wri227,wri350,wri327]),junior,term(spring)).
+class(set,1,cst334,subject(senoir_proposal),1,preq([cst336,cst336,cst326,cst316,cst211,cst136,cst126,cst116]),junoir,term(spring)).
+class(set,1,cst415,subject(computer_network),4,preq([cst336,cst336,cst326,cst316,cst211,cst136,cst126,cst116]),senoir,term(fall)).
+class(set,1,cst412,subject(senoir_project),3,preq([cst334,cst336,cst326,cst316,cst211,cst136,cst126,cst116]),senoir,term(fall)).
+class(set,1,cst422,subject(senoir_project),3,preq([cst412,cst336,cst326,cst316,cst211,cst136,cst126,cst116]),senoir,term(winter)).
+class(set,1,cst432,subject(senoir_project),2,preq([cst422,cst412,cst336,cst326,cst316,cst211,cst136,cst126,cst116]),senoir,term(spring)).
+class(set,1,anth452,subject(globalization),3,preq([wri122,wr121]),senoir,term(summer)).
+class(set,1,hist452,subject(globalization_in_PNW),3,preq([wri122,wri121]),senoir,term(summer)).
+/*
+ *1.	What are the pre-requisites for GUI?
+  1.	Which courses do I need to take before I take GUI?
+ query example:
+ prerequisite(cst352,X).
+
+*/
+prerequisite(Class,[Preq|PreqList]):-
+    class(_,_,Class,_,_,preq([Preq|PreqList]),_,_).
+
+/*
+ * 2.	How many credits is Assembly Language?
+ * query example:
+  class_credit(math465,X).
+ * 
+*/
+class_credit(Class,Credit):-
+    class(_,_,Class,_,Credit,_,_,_).
+      
+search(X,_,_,_,Y,_,_,_):- class(X,_,_,_,Y,_,_,_).
+search(X,_,_,_,Y,_,_,_):- class(X,_,_,_,Z,_,_,_),
+    					class(Z,_,_,_,Y,_,_,_).
+search2(X,Y,_,_,_,_,_,_):- class(X,Y,_,_,_,_,_,_).
+search2(X,Y,_,_,_,_,_,_):- class(X,Z,_,_,_,_,_,_),
+    					class(Z,Y,_,_,_,_,_,_).
+
+/*
+ *3.	How many required courses are there for an SET degree and how many credits?
+ query example:
+ total_credit(X).
+ total_classes(X).
+*/
+total_credit(Sum):-
+    findall(Object,search(set,_,_,_,Object,_,_,_),Total),
+    sum_list(Total,Sum).
+total_classes(Sum):-
+    findall(Object,search2(set,Object,_,_,_,_,_,_),Total),
+    sum_list(Total,Sum).
+/*
+2.	If I take no more than 8 credits per term, how many years before I graduate?
+    credit_estimator(X,8).
+*/
+credit_estimator(Terms,Credit):-
+    findall(Object,search(set,_,_,_,Object,_,_,_),Total),
+    sum_list(Total,Sum),
+    Terms is Sum / Credit.
+/*
+ * 3.	Which courses should I take Fall term, Freshman year to graduate in 4 years?
+      query example:
+      class_term(cst116,freshamn,X).
+      NOTE:THIS QUERY PULLS WHAT TERM THAT MATCHES THE CLASS NOT THE LIST OF FALL TERM CLASSES
+      SORRY PROFESSOR I THINK I DID NOT UNDERSTAND THE QUESTION WELL!
+*/
+
+college_term(Class,Level,Term):-
+      class(_,_,Class,_,_,_,Level,Term).
